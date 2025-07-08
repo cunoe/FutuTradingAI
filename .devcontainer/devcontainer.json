@@ -9,8 +9,8 @@
     "remoteUser": "root",
     "runArgs": [],
     "forwardPorts": [],
-    "postCreateCommand": "git clone git@github.com:cunoe/FutuTradingAI.git . && pip install -r requirements.txt",
-    "postStartCommand": "sh .devcontainer/init.sh",
+    "postCreateCommand": "git clone git@github.com:cunoe/FutuTradingAI.git .",
+    "postStartCommand": "pip install -r requirements.txt",
     "customizations": {
       "vscode": {
         "extensions": [

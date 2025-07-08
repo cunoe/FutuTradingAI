@@ -1,0 +1,4 @@
+futu-api
+pandas
+openai
+tabulate 

@@ -1,0 +1,40 @@
+{
+    "name": "dev-futu-trading-ai",
+    "build": {
+      "dockerfile": "Dockerfile",
+      "target": "dev"
+    },
+    "workspaceFolder": "/root/FutuTradingAI",
+    "shutdownAction": "stopContainer",
+    "remoteUser": "root",
+    "runArgs": [],
+    "forwardPorts": [],
+    "postCreateCommand": "git clone git@github.com:cunoe/FutuTradingAI.git . && pip install -r requirements.txt",
+    "postStartCommand": "sh .devcontainer/init.sh",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+            "steoates.autoimport",
+            "naumovs.color-highlight",
+            "redjue.git-commit-plugin",
+            "esbenp.prettier-vscode",
+            "gruntfuggly.todo-tree",
+            "standard.vscode-standard",
+            "aaron-bond.better-comments",
+            "kisstkondoros.vscode-gutter-preview",
+            "eamodio.gitlens",
+            "ms-python.python",
+            "ms-python.debugpy",
+            "ms-python.pylint",
+            "ms-python.autopep8",
+            "ms-python.isort",
+            "ms-python.mypy-type-checker",
+            "ms-python.black-formatter"
+        ]
+      }
+    },
+    "mounts": [
+      "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+    ]
+  }
+  
